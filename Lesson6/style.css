@@ -1,0 +1,11 @@
+body {
+    max-width: 1140px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainBlock {
+    display: flex;
+    flex-direction: row;
+}
