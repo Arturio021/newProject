@@ -9,3 +9,21 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+.Buttons {
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonOne {
+    border-radius: 7px;
+    width: 250px;
+}
+
+.buttonTwo {
+    margin-top: 20px;
+    border-radius: 7px;
+    width: 250px;
+}

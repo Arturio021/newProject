@@ -16,18 +16,33 @@
 // console.log(document.body.childNodes);
 // console.log(document.body.children);
 
-var myList = document.querySelector(".mainBlock");
+// Количество всех узлов которые находятся внутри тега body
+// console.log(document.body.childNodes.length);
+// console.log(document.body.childNodes);
+// console.log(document.body.children);
 
-function numberOfNodesForAncestors() {
-    console.log(document.body.children[0].children);
-    console.log(myList.children.length);
-}
-numberOfNodesForAncestors();
-
+// Количество только "элементов-узлов" которые являются дочерними для тега body
+buttonOne = document.querySelector(".buttonOne");
+var buttonTwo = document.querySelector(".buttonTwo");
 var mainBody = document.querySelector("body");
 
-function numberOfNodesForAll() {
-    console.log(document.body.children);
-    console.log(mainBody.children.length);
+function numberOfChildElemnts() {
+    console.log(
+        'Количество только "элементов - узлов" которые являются дочерними для тега body:'
+    );
+    console.log(mainBody.children);
+    console.log(`Количество дочерних элементов: ${mainBody.children.length}`);
+    console.log("---------------------------");
 }
-numberOfNodesForAll();
+
+buttonTwo.addEventListener("click", numberOfChildElemnts);
+
+// Количество всех узлов которые находятся внутри тега body
+
+function allNodes() {
+    console.log("Количество всех узлов которые находятся внутри тега body:");
+    console.log(mainBody.children[0].children);
+    console.log(mainBody.children[0].children.length);
+    console.log("---------------------------");
+}
+buttonOne.addEventListener("click", allNodes);
