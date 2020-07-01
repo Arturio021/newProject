@@ -41,8 +41,8 @@ buttonTwo.addEventListener("click", numberOfChildElemnts);
 
 function allNodes() {
     console.log("Количество всех узлов которые находятся внутри тега body:");
-    console.log(mainBody.children[0].children);
-    console.log(mainBody.children[0].children.length);
+    console.log(mainBody.childNodes);
+    console.log(mainBody.childNodes.length);
     console.log("---------------------------");
 }
 buttonOne.addEventListener("click", allNodes);
